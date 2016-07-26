@@ -1,5 +1,5 @@
 # Disclaimer
-It is an alpha-version.
+It is an beta-version. "Because it's BETA than nothing".
 This piece of code is another try to beat 'boot-storm'.
 It uses torrent to deliver image to node.
 
@@ -115,7 +115,7 @@ luna group add -n compute -i enp7s0 -o compute
 luna group change -n compute -b base
 luna group change -n compute --boot_if enp7s0
 luna group change -n compute --interface enp7s0 --setnet cluster
-echo -e "DEVICE=enp0s3\nONBOOT=yes" | luna group change  --name compute --interface enp7s0 -e
+echo -e "DEVICE=enp7s0\nONBOOT=yes" | luna group change  --name compute --interface enp7s0 -e
 luna group change -n compute --bmcnetwork --setnet ipmi
 ```
 # (Optional) Edit partitioning
@@ -240,6 +240,7 @@ EOF
 ```
 (Optional. Set up HA)
 Consider you have:
+|------------------------:|----------:|
 |           10.30.255.251 |   master1 |
 |           10.30.255.252 |   master2 |
 |(floating) 10.30.255.254 |   master  |
