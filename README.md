@@ -238,7 +238,8 @@ user=luna
 password=<password>
 EOF
 ```
-(Optional. Set up HA)
+# (Optional) Set up HA
+
 Consider you have:
 
 |                      IP |  hostname |
