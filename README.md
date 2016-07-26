@@ -240,6 +240,7 @@ EOF
 ```
 (Optional. Set up HA)
 Consider you have:
+|                      IP |  hostname |
 |------------------------:|----------:|
 |           10.30.255.251 |   master1 |
 |           10.30.255.252 |   master2 |
