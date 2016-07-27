@@ -403,7 +403,7 @@ def start_torrent_client():
     update_torrent_client()
 
 def update_torrent_client():
-    #global torrents_path
+    global t_session
     if not bool(t_session):
         return None
     #cluster = luna.Cluster()
