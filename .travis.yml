@@ -1,3 +1,3 @@
 sudo: required
 language: python
-script: luna cluster init ; luna cluster change --frontend_address 10.30.255.254 ;luna network add -n cluster -N 10.30.0.0 -P 16
+script: luna cluster init ; luna cluster change --frontend_address 10.30.255.254 ; luna network add -n cluster -N 10.30.0.0 -P 16
